@@ -1,0 +1,52 @@
+.TrailerContainer{
+    background: black;
+    height: auto;
+    padding: 1%;
+    width: auto;
+    text-align: center;
+    white-space: nowrap;
+    z-index: -100;
+
+}
+
+
+
+.item {
+    display: inline-block;
+    z-index: 100;
+    margin-top:auto;
+    margin-bottom:auto ;
+    background: black;
+    height: 180px;
+    width: 360px;
+    transition: transform 300ms ease 100ms;
+  }
+
+  .TrailerContainer:hover{
+     z-index: -1000;
+  }
+
+  .TrailerContainer:hover .item {
+    transform: translateX(-25%);
+ }
+ .TrailerContainer:hover .item:hover {
+    transform: scale(1.5);
+    z-index: 100;
+ }
+
+ .item:hover ~ .item {
+    transform: translateX(25%);
+ }
+
+ .MovieContainer{
+    background: black;
+    width:100%;
+    text-align: center;
+ }
+
+ .MoviePlayer{
+    display: inline-block;
+    width : 800px;
+    height : 400px;
+ }
+

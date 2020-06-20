@@ -1,0 +1,65 @@
+.GridCard{
+    width:135px;
+    height: 264px;
+    background: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    margin: auto;
+    z-index: 0;
+    box-shadow: 5px 5px 5px #ccc;
+    transition: transform .2s;
+}
+.GridCard:hover{
+    transform:scale(1.1, 1.1);
+    z-index: 1;
+}
+.main-video{
+    height: 500px;
+    width: 100%;
+}
+
+
+@media (max-width: 767px) {
+    .GridCard{
+        width:120px;
+        height: 250px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 25px;
+        margin: auto;
+        z-index: 0;
+        box-shadow: 5px 5px 5px #ccc;
+        transition: transform .2s;
+    }
+
+    .main-video{
+        height: 200px;
+        width: 100%;
+    }
+
+    .main-image-text {
+
+        font-size: 5px;
+    }
+
+}
+
+@-webkit-keyframes fadeOut {
+    0% { opacity: 1;}
+    99% { opacity: 0.01;}
+    100% { opacity: 0; z-index: -100;}
+}  
+@keyframes fadeOut {
+    0% { opacity: 1;}
+    99% { opacity: 0.01;}
+    100% { opacity: 0;z-index: -100;}
+}
+
+.main-video-cover {
+  
+    animation-delay: 2s;
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}

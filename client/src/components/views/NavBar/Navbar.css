@@ -1,0 +1,184 @@
+@import '~antd/dist/antd.css';
+
+.search-form{
+  width : 40%;
+}
+
+.form-submit-button {
+
+    background: black;
+    box-shadow: 0px 0px 0px transparent;
+
+    border: 0px solid transparent;
+    height: 35px;
+    padding : 10px;
+    margin-top: 12px;
+    color: gray;
+    transition: 300ms;
+
+}
+
+
+
+ 
+
+.form-submit-button:hover {
+
+    cursor: pointer;
+    /* background: blue; */
+
+    box-shadow: 0px 0px 0px transparent;
+
+    /* border: 1px solid blue; */
+    color:white;
+
+    text-shadow: 0px 0px 0px transparent;
+
+}
+
+.search-input{
+  margin-top: 22px;
+  width: 200px;
+  transition : width 300ms;
+  border: solid 1px transparent;
+
+}
+
+
+
+.search-input:focus{
+ 
+  min-width: 50px;
+  width:75%;
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+  border-color: blue;
+  
+}
+
+.menu {
+  padding: 0 20px;
+  background-color: black;
+  border-bottom: solid 1px black;
+  overflow: auto;
+  /* box-shadow: 0 0 30px #f3f1f1; */
+  color: white;
+  text-decoration-color: white;
+  /* background-color: white; */
+}
+
+.menu__logo {
+  width: 150px;
+  float: left;
+}
+
+.menu__logo a {
+  display: inline-block;
+  font-size: 20px;
+  padding: 19px 20px;
+}
+
+
+
+.menu__container .ant-menu-item {
+  padding: 0px 5px;
+}
+
+.menu__container .ant-menu-submenu-title {
+  padding: 10px 20px;
+}
+
+.menu__container .ant-menu-item a,
+.menu__container .ant-menu-submenu-title a {
+  padding: 10px 15px;
+}
+
+.menu__container .ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.menu__container .menu_left {
+  float: left;
+}
+
+.menu__container .menu_rigth {
+  float: right;
+}
+
+.menu__mobile-button {
+  float: right;
+  height: 32px;
+  padding: 6px;
+  margin-top: 8px;
+  display: none !important; /* use of important to overwrite ant-btn */
+  background: #3e91f7;
+}
+
+
+.menu_drawer .ant-drawer-body {
+  padding: 0 !important;
+  
+}
+
+/* align header of Drawer with header of page */
+.menu_drawer .ant-drawer-header {
+  padding: 14px 24px !important;
+  
+}
+
+@media (max-width: 767px) {
+
+
+  .menu__mobile-button {
+    display: inline-block !important;
+  }
+
+  .menu__logo {
+    width: 50px;
+    float: left;
+  }
+  .menu_left,
+  .menu_rigth {
+    display: none;
+  }
+
+  .menu__logo a {
+    margin-left: -20px;
+  }
+
+  .menu__container .ant-menu-item,
+  .menu__container .ant-menu-submenu-title {
+    padding: 1px 20px;
+  }
+
+  .menu__logo a {
+    padding: 10px 10px;
+  }
+
+  .search-input{
+    margin-top:10px;
+    max-width: 150px;
+  
+  }
+  .form-submit-button{
+    margin-top:4px;
+  }
+  
+
+  .search-form{
+    width : 70%;
+  }
+
+  .search-input{
+    width : 100px;
+    margin-top: 12px;
+  }
+
+  .search-input:focus{
+    min-width:50px;
+    width : 65%;
+    
+  }
+  
+}
